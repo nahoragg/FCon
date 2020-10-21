@@ -15,7 +15,7 @@ This script basically automates all the information gathering tools and stores t
 - Grab subdomains using scraping, brute forcing & javascript files
 - Filter Live subdomains/IP's
 - Grab a screenshots of responsive subdomains/IP's 
-- Grab services running on subdomains/IP's using port scan
+- Portscanning on subdomains/IP's
 - Perform dirsearch for all subdomains 
 
 
@@ -27,6 +27,8 @@ This script basically automates all the information gathering tools and stores t
 - `./install.sh`
 
 ### System Requirements
+- Must have golang installed
+- Must have snap installed
 - Recommended to run on vps with 1VCPU and 2GB ram.
 
 
