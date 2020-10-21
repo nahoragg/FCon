@@ -26,9 +26,9 @@ printf "Running subfinder.\\n"
 subfinder -d "$domain" -t 20 -o "$output_path"/subfinder_subs
 
 printf "Running gobuster.\\n"
-#gobuster dns --wildcard -q -t 100 -d "$domain" -w "$data_path"/commonspeak2.txt -o "$output_path"/go_subs		
-#cat "$output_path"/go_subs | cut -d ' ' -f 2 >> "$output_path"/subdomains
-#rm "$output_path"/go_subs
+gobuster dns --wildcard -q -t 100 -d "$domain" -w "$data_path"/commonspeak2.txt -o "$output_path"/go_subs		
+cat "$output_path"/go_subs | cut -d ' ' -f 2 >> "$output_path"/subdomains
+rm "$output_path"/go_subs
 
 cat "$output_path"/amass_subs >> "$output_path"/subdomains
 cat "$output_path"/subfinder_subs >> "$output_path"/subdomains
