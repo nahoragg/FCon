@@ -2,7 +2,7 @@
 
 # Usage
 
-`./fcon.sh -d domain.com`
+`./fcon.sh domain.com`
 
 # About
 
